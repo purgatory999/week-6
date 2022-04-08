@@ -1,0 +1,57 @@
+
+R version 4.1.2 (2021-11-01) -- "Bird Hippie"
+Copyright (C) 2021 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> library("readxl")
+> read_excel("C:\Users\zhang\Desktop\\title.xlsx")
+Error: '\U' used without hex digits in character string starting ""C:\U"
+> library("readxl")
+> read_excel(Desktop\\title.xlsx")
+Error: unexpected '\\' in "read_excel(Desktop\"
+> library("readxl")
+> read_excel(C:\Users\zhang\Desktop\title.xlsx")
+Error: unexpected symbol in "read_excel(C:\Users"
+> library("readxl")
+> read_excel("Desktop\title.xlsx")
+Error: `path` does not exist: ‘Desktop  itle.xlsx’
+> library("readxl")
+> read_excel("C:\Users\zhang\Desktop\title.xlsx")
+Error: '\U' used without hex digits in character string starting ""C:\U"
+> library("readxl")
+> read_excel("D:\New folder\title.xlsx")
+Error: '\N' is an unrecognized escape in character string starting ""D:\N"
+> library("readxl")
+> install.packages("readxl")
+Warning: package ‘readxl’ is in use and will not be installed
+> library("readxl")
+> read_excel("D:\\New folder\\title.xlsx")
+-/                                                                              # A tibble: 37 x 1
+   `[A Forward-Pipe Operator for R • magrittr]https://rvest.tidyverse.org/`     
+   <chr>                                                                        
+ 1 [The Comprehensive R Archive Network]https://magrittr.tidyverse.org/         
+ 2 [Simple, Consistent Wrappers for Common String Operations • stringr]https://~
+ 3 [14 Strings | R for Data Science]https://stringr.tidyverse.org/              
+ 4 [Tutorial: Web Scraping in R with rvest – Dataquest]https://r4ds.had.co.nz/s~
+ 5 [Practical Introduction to Web Scraping in R | R-bloggers]https://www.dataqu~
+ 6 [Beginner’s Guide on Web Scraping in R (using rvest) with example]http://app~
+ 7 [Tidy web scraping in R — Tutorial and resources | by Keith McNulty | Toward~
+ 8 [web scraping in r - Google Search]https://towardsdatascience.com/tidy-web-s~
+ 9 [Text Mining is Fun (with R)!. I am a big fan of Julia Silge and David… | by~
+10 [Text Mining and Sentiment Analysis: Analysis with R - Simple Talk]https://w~
+# ... with 27 more rows
+> 
